@@ -5,6 +5,8 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     [SerializeField] float speed = 5f;
+
+
     private Rigidbody2D rb;
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
@@ -12,7 +14,6 @@ public class BallController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         rb = GetComponent<Rigidbody2D>(); //Get a reference to the RigidBody
         audioSource = GetComponent<AudioSource>(); //Get a reference to our AudioSource
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get a reference to the SpriteRenderer
